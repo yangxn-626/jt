@@ -11,12 +11,15 @@
     <groupId>com.jt</groupId>
     <artifactId>jt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>jt</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
+ <modules>
+     <module>jt-common</module>
+ </modules>
     <dependencies>
         <!--springBoot动态的引入springMVC全部的配置 -->
         <dependency>
