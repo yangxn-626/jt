@@ -19,6 +19,7 @@
     </properties>
  <modules>
      <module>jt-common</module>
+     <module>jt-manage</module>
  </modules>
     <dependencies>
         <!--springBoot动态的引入springMVC全部的配置 -->
