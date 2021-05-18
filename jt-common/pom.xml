@@ -9,6 +9,7 @@
     </parent>
     <artifactId>jt-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>jt-common</name>
     <description>Demo project for Spring Boot</description>
 </project>
