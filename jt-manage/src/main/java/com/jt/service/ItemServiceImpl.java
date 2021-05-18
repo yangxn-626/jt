@@ -14,7 +14,6 @@ public class ItemServiceImpl implements ItemService {
 	@Autowired
 	private ItemMapper itemMapper;
 
-
 	@Override
 	public EasyUIData findItemByPage(Integer page, Integer rows) {
 		int total = itemMapper.selectCount(null);
