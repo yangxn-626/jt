@@ -24,10 +24,20 @@ public class ItemController {
 	public SysResult saveItem(Item item){
 		try {
 			itemService.saveItem(item);
-			return SysResult.ok();
+			return SysResult.ok("Ikan");
 		}catch (Exception e){
 			e.printStackTrace();
 			return SysResult.fail();
+		}
+	}
+	@RequestMapping("/update")
+	public SysResult updateItem(Item item){
+		try {
+			itemService.updateItem(item);
+			return SysResult.ok();
+		}catch (Exception e){
+			e.printStackTrace();
+			return SysResult.fail("商品修改失败");
 		}
 	}
 	

@@ -7,4 +7,6 @@ public interface ItemService {
     EasyUIData findItemByPage(Integer page, Integer rows);
 
     void saveItem(Item item);
+
+    void updateItem(Item item);
 }

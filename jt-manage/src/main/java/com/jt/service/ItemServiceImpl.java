@@ -29,4 +29,10 @@ public class ItemServiceImpl implements ItemService {
 		item.setStatus(1).setCreated(new Date()).setUpdated(item.getCreated());
 		itemMapper.insert(item);
 	}
+    @Transactional
+	@Override
+	public void updateItem(Item item) {
+		item.setUpdated(new Date());
+		itemMapper.updateById(item);
+	}
 }
