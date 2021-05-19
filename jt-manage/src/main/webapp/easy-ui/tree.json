@@ -24,7 +24,8 @@
 			}
 		],
 		"state":"open"
-	},{
+	},
+	{
 		"id":"2",
 		"text":"王者荣耀",
 		"children":[
