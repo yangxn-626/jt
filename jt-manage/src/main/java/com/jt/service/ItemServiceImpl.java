@@ -32,9 +32,11 @@ public class ItemServiceImpl implements ItemService {
 	@Override
 	public void saveItem(Item item, ItemDesc itemDesc) {
 		item.setStatus(1).setCreated(new Date()).setUpdated(item.getCreated());
+
+		itemMapper.insert(item);
 		itemDesc.setItemId(item.getId()).setCreated(new Date()).setUpdated(itemDesc.getCreated());
 		itemDescMapper.insert(itemDesc);
-		itemMapper.insert(item);
+
 	}
     @Transactional
 	@Override
